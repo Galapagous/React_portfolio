@@ -39,11 +39,10 @@ const Project = () => {
 
   return (
     <section id='project' className={`sm:px-28 px-5 h-auto w-[100vw] py-10 bg-slate-300`}>
-        <div className='w-full h-auto flex flex-col gap-5 items-start justify-start'>
+        <div className='w-full h-auto flex flex-col sm:gap-5 gap-14 items-start justify-start'>
                 <ProjectSample img={Project1} arrangement='even' title='GalapMuseum' desc={blogPlatform.description} stack={blogPlatform.techStack}/>
                 <ProjectSample img={Project2} arrangement='odd' title='GalapMuseum' desc={blogPlatform.description} stack={blogPlatform.techStack}/>
                 <ProjectSample img={Project3} arrangement='even' title='GalapMuseum' desc={blogPlatform.description} stack={blogPlatform.techStack}/>
-            
         </div>
     </section>
   )

@@ -39,7 +39,7 @@ const Homepage = () => {
 
 
     return (
-    <div className='relative h-auto'>
+    <div className='relative h-auto w-full overflow-hidden'>
         <LeftNav currentSection={activeSection} setSelection={handleSelection} section={activeSection}/>
         {/* hero section */}
         <Main/>
