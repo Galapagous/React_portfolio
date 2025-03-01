@@ -20,11 +20,8 @@ const Homepage = () => {
             const element = document.getElementById(section);
             if (element) {
                 const rect = element.getBoundingClientRect();
-                // Check if the section is in the viewport
                 if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
                     setActiveSection(section);
-                    // Call your function here
-                    console.log(`Scrolled to ${section}`);
                 }
             }
         });
@@ -39,8 +36,8 @@ const Homepage = () => {
 
 
     return (
-    <div className='relative h-auto w-full overflow-hidden'>
-        <LeftNav currentSection={activeSection} setSelection={handleSelection} section={activeSection}/>
+    <div className='relative h-auto w-screen overflow-hidden'>
+        {/* <LeftNav currentSection={activeSection} setSelection={handleSelection} section={activeSection}/> */}
         {/* hero section */}
         <Main/>
 
