@@ -14,7 +14,7 @@ const RightNav = () => {
       <button
         onClick={switchMenu}
         aria-label="Toggle menu"
-        className="w-12 h-12 flex items-center justify-center bg-blue-400 text-white rounded-full shadow-md z-50 focus:outline-none"
+        className="w-12 h-12 flex items-center justify-center bg-blue-400 text-white rounded-sm shadow-md z-50 focus:outline-none"
       >
         {activeMenu ? <RxCross1 size={24} /> : <BiMenuAltLeft size={24} />}
       </button>
